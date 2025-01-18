@@ -22,7 +22,7 @@ function App() {
 
         try {
             const response = await axios.post(
-                "http://localhost:8000/extract-links",
+                `${import.meta.env.VITE_SERVER}extract-links`,
                 {
                     url: finalSite,
                 }
